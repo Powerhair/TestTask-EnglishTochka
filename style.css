@@ -1,0 +1,347 @@
+@import url(./fonts/fonts.css);
+
+.main {
+    background-color: #F5F5F5;
+    max-width: 1280px;
+    margin: 0 auto;
+  
+}
+
+.content {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    flex-wrap: nowrap;
+}
+
+.balance {
+    margin: 57px 83px 93px 70px;
+    background-color: rgba(106,106,106, 0.08);
+    max-width: 255px;
+    height: 242px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.balance__container {
+    margin-right: 38px;
+    margin-left: 38px;
+}
+
+.balance__title {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 13px;
+    color: #242424;
+    text-align: center;
+    margin: 16px 80px 0 38px;
+}
+
+.balance__coin {
+    margin-right: 6.48px;
+}
+
+.balance__coin-small {
+    max-width: 14px;
+    max-height: 14px;
+}
+
+.balance__value {
+    margin: 0;
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 43px;
+    color: #242424;
+    text-align: center;
+}
+
+.balance__value-small {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 13px;
+    text-align: center;
+    color: #242424;
+    margin: 0;
+}
+
+.balance__icon {
+    margin-left: 9px;
+}
+
+.balance__icon-small {
+    max-width: 15px;
+    max-height: 13px;
+}
+
+.balance__container-gap {
+    gap: 3px;
+}
+
+.option {
+   display: flex;
+   flex-direction: column;
+   background-color: rgba(106,106,106, 0.08);
+   max-width: 802px;
+   max-height: 242px;
+   margin-bottom: 40px;
+   margin-right: 70px;
+}
+
+.option__container {
+   display: flex;
+   flex-direction: row;
+   margin-left: 29px;
+   max-width: 753px;
+   gap: 399px;
+   justify-content: space-between;
+   margin: 0 20px 0 29px;
+   flex-wrap: nowrap;
+}
+
+.option__title {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 13px;
+    color: #242424;
+}
+
+
+
+.option__info {
+    max-width: 51px;
+    max-height: 18px;
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 18px;
+    text-decoration: underline;
+}
+
+.card {
+    max-width: 135px;
+    max-height: 150px;
+}
+
+.card__image {
+    margin: 11px 48px 15px 48px;    
+}
+
+.card__sale {
+    margin: 0;
+}
+
+.card__container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 59px 22px 68px;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+.balance__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.card__description {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
+.card__name {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #242424;
+    margin: 0;
+
+}
+
+.card__button {
+    background: #FECE00;
+    border-radius: 5px;
+    border-color: transparent;
+    max-width: 135px;
+    height: 42px;
+    margin-top: 11px;
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #242424;
+
+}
+
+.card__button-green {
+    background: #00CD52;
+    color: #FFFFFF;
+}
+
+
+/* popup */
+
+.popup {
+    visibility: hidden; 
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+    transition: visibility 0s, opacity .5s linear;
+    } 
+
+.popup__info {
+    width: 477px;
+    height: 470px;
+    background: #EDEEF0;
+    position: relative;
+}
+
+.popup__title {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+    color: #242424;
+    margin: 0 293px 22px 37px;
+    padding-top: 59px;
+}
+
+.popup__description {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 130%;
+    color: #242424;
+    width: 376px;
+    height: 37px;
+    margin: 0 64px 45px 37px;
+}
+
+.popup__description:last-of-type {
+    margin-bottom: 73px;
+}
+
+.popup__close {
+    background-image: url(./image/btn_close.svg);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+.popup__opened {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1150px) {
+    .option__title {
+        font-size: 15px;
+        line-height: 13px;
+    }
+    
+    .main {
+        height: 550px;
+    }
+
+    .option {
+        max-height: 480px;
+        margin-top: 57px;
+    }
+    .option__container {
+        gap: 200px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .main {
+        height: 1000px;
+    }
+
+    .option {
+        max-height: 900px;
+    }
+    .option__container {
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .main {
+        height: 1300px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .option {
+        margin-top: 0;
+        margin-left: 80px;
+    }
+
+    .card__container {
+        flex-direction: column;
+    }
+
+    .option__container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .option__info {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .popup__info {
+        width: 320px;
+        height: 350px;
+    }
+
+    .popup__description {
+        width: 300px;
+        font-size: 10px;
+        line-height: 13px;
+        margin: 0 10px 20px 10px;
+    }
+
+    .popup__description:last-of-type {
+        margin-bottom: 20px;
+    }
+    
+}
